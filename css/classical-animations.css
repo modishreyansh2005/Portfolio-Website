@@ -1,0 +1,239 @@
+/* ==========================================================================
+   CLASSICAL & COOL ANIMATION SUITE FOR AI/ML PORTFOLIO
+   Harmonic Oscillations, Ink Diffusion, Mathematical Flow, and Micro-Interactions
+   ========================================================================== */
+
+/* 1. Hero Staggered Entrance */
+.hero-fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: classical-fade-in 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes classical-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(28px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 2. Classical Harmonic Hover & Floating */
+@keyframes harmonic-float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.4deg);
+  }
+}
+
+.float-harmonic {
+  animation: harmonic-float 6s ease-in-out infinite;
+}
+
+/* 3. Gold Leaf Shimmer / Celestial Sheen */
+@keyframes gold-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.classical-shimmer {
+  background: linear-gradient(
+    90deg, 
+    var(--accent-primary) 0%, 
+    var(--accent-gold) 50%, 
+    var(--accent-primary) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gold-shimmer 8s linear infinite;
+}
+
+/* 4. Pulse Indicators */
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.8;
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+  }
+}
+
+.pulse-fast {
+  animation: spin-slow 10s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 5. Scroll Cue Descent Ball */
+@keyframes scroll-drop {
+  0% {
+    top: -4px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  75% {
+    top: 32px;
+    opacity: 0.8;
+  }
+  100% {
+    top: 38px;
+    opacity: 0;
+  }
+}
+
+/* 6. Reveal On Scroll */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children reveal */
+.stagger-parent [data-reveal]:nth-child(1) { transition-delay: 0.1s; }
+.stagger-parent [data-reveal]:nth-child(2) { transition-delay: 0.2s; }
+.stagger-parent [data-reveal]:nth-child(3) { transition-delay: 0.3s; }
+.stagger-parent [data-reveal]:nth-child(4) { transition-delay: 0.4s; }
+
+/* 7. Magnetic Button Micro-Interaction */
+.magnetic-btn {
+  display: inline-flex;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* 8. Classical Ripple Click */
+.ripple-ink {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ink-ripple-anim 0.75s linear;
+  background-color: rgba(55, 48, 163, 0.18);
+  pointer-events: none;
+}
+
+@keyframes ink-ripple-anim {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* 9. Card 3D Depth & Specular Sheen on Hover */
+.tilt-card {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.3s ease;
+  transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+}
+
+.tilt-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.45) 0%, transparent 60%);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s ease;
+}
+
+.tilt-card:hover::after {
+  opacity: 1;
+}
+
+.tilt-card:hover {
+  transform: translateY(-4px) scale(1.008);
+  box-shadow: 0 20px 40px -12px rgba(55, 48, 163, 0.12), 0 8px 18px -4px rgba(18, 24, 38, 0.04);
+  border-color: rgba(55, 48, 163, 0.28);
+}
+
+/* 10. Shimmer Progress Bar Animation */
+.skill-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    transparent 100%
+  );
+  animation: skill-shimmer 2.5s infinite;
+}
+
+@keyframes skill-shimmer {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+/* 11. Subtle Mathematical Glow on Equation Hover */
+.math-proof-box:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 16px rgba(55, 48, 163, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* 12. Floating Latex Equation Dynamics */
+.latex-eq {
+  animation: eq-breathe 4s ease-in-out infinite alternate;
+  display: inline-block;
+}
+
+@keyframes eq-breathe {
+  0% {
+    opacity: 0.85;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+/* 13. Active Nav Indicator Dot Pulse */
+.nav-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(55, 48, 163, 0.25);
+  animation: pulse-dot 2s infinite;
+}

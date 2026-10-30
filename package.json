@@ -1,0 +1,13 @@
+{
+  "name": "shreyansh-modi-portfolio",
+  "version": "1.0.0",
+  "description": "AI & Machine Learning Engineer Portfolio for Shreyansh Modi",
+  "scripts": {
+    "start": "npx serve -l 8080 .",
+    "dev": "npx serve -l 8080 .",
+    "serve:python": "python3 -m http.server 8080"
+  },
+  "keywords": ["ai", "machine-learning", "portfolio", "rag", "langchain"],
+  "author": "Shreyansh Modi",
+  "license": "MIT"
+}

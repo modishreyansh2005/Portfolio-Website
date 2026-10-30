@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreyansh Modi | AI & Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Shreyansh Modi, AI/ML Engineer specializing in Agentic AI Workflows, Retrieval-Augmented Generation (RAG), LLMs, and Machine Learning Systems.">
+  <meta name="keywords" content="Shreyansh Modi, AI Engineer, Machine Learning Engineer, Generative AI, RAG, LangChain, LLM, Python, Scikit-learn, FastAPI, Portfolio">
+  <meta name="author" content="Shreyansh Modi">
+
+  <!-- Google Fonts: Classical Editorial Serif (Cinzel + Cormorant Garamond) + Clean Modern Sans (Plus Jakarta Sans) + Tech Mono (JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- KaTeX for Classical Mathematical Typesetting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="if(window.renderMathInElement){renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false});}"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/classical-animations.css">
+</head>
+<body class="light-theme">
+
+  <!-- Ambient Synaptic Canvas Background -->
+  <canvas id="synapse-canvas" aria-hidden="true"></canvas>
+
+  <!-- Custom Classical Ink Cursor -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+  <!-- Minimal Sleek Top Status Ribbon -->
+  <div class="classical-top-ribbon">
+    <div class="ribbon-content">
+      <span class="ribbon-tag"><i class="fa-solid fa-atom pulse-fast"></i> AGENTIC AI &bull; RETRIEVAL-AUGMENTED GENERATION (RAG) &bull; LLMs</span>
+      <span class="ribbon-divider">•</span>
+      <span class="ribbon-tag"><i class="fa-solid fa-graduation-cap"></i> B.TECH IT SOFTWARE ENGINEERING &bull; CGPA 8.23</span>
+      <span class="ribbon-divider">•</span>
+      <span class="ribbon-status"><span class="status-indicator"></span> AVAILABLE FOR AI/ML ROLES</span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="main-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <div class="brand-crest">
+          <span class="crest-symbol">SM</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">SHREYANSH MODI</span>
+          <span class="brand-role">AI / ML ENGINEER</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#hero" class="nav-item">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#education" class="nav-item">Education</a>
+        <a href="#certifications" class="nav-item">Certifications</a>
+        <a href="#achievements" class="nav-item">Achievements</a>
+        <a href="#resume" class="nav-item highlight-nav"><i class="fa-solid fa-file-pdf"></i> Resume</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Audio tactile feedback toggle -->
+        <button id="sound-toggle" class="btn-icon" aria-label="Toggle Subtle Tactile Audio Feedback" title="Tactile Acoustics">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <a href="#contact" class="btn-primary-classical">
+          <span>Get In Touch</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <nav class="mobile-nav-links">
+      <a href="#hero" class="mobile-link">1. Home / Hero</a>
+      <a href="#about" class="mobile-link">2. About Me</a>
+      <a href="#skills" class="mobile-link">3. Skills & Technologies</a>
+      <a href="#experience" class="mobile-link">4. Work Experience</a>
+      <a href="#projects" class="mobile-link">5. Projects</a>
+      <a href="#education" class="mobile-link">6. Education</a>
+      <a href="#certifications" class="mobile-link">7. Certifications</a>
+      <a href="#achievements" class="mobile-link">8. Achievements</a>
+      <a href="#resume" class="mobile-link">9. Resume / CV</a>
+      <a href="#contact" class="mobile-link">10. Contact Me</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- =========================================================================
+         SECTION 1: HOME / HERO SECTION
+         ========================================================================= -->
+    <section id="hero" class="hero-section">
+      <div class="hero-grid-ornament" aria-hidden="true"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="classical-badge hero-fade-in" style="--delay: 0.1s">
+            <span class="badge-icon">∮</span>
+            <span class="badge-text">Agentic Workflows &bull; Production RAG &bull; Machine Learning</span>
+          </div>
+
+          <h1 class="hero-title hero-fade-in" style="--delay: 0.25s">
+            Hello, I'm <span class="classical-italic-gradient">Shreyansh Modi</span>. AI & Machine Learning Engineer.
+          </h1>
+
+          <p class="hero-description hero-fade-in" style="--delay: 0.4s">
+            Specializing in <strong>Agentic AI workflows, Retrieval-Augmented Generation (RAG), and end-to-end Machine Learning systems</strong>. 
+            Experienced in architecting production solutions at <strong>Trentium Solution</strong>, <strong>BISAG-N</strong>, and <strong>Sahana System Limited</strong> 
+            using Python, LangChain, LLMs, Scikit-learn, and FastAPI.
+          </p>
+
+          <div class="hero-ctas hero-fade-in" style="--delay: 0.55s">
+            <a href="#projects" class="btn-primary-classical magnetic-btn">
+              <i class="fa-solid fa-code"></i>
+              <span>Explore Projects</span>
+            </a>
+            <a href="assets/Shreyansh_Modi_Resume.pdf" target="_blank" download="Shreyansh_Modi_Resume.pdf" class="btn-secondary-classical magnetic-btn">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download Resume</span>
+            </a>
+            <a href="#contact" class="btn-secondary-classical magnetic-btn">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Real-Time Verified Metrics Strip -->
+          <div class="hero-metrics-strip hero-fade-in" style="--delay: 0.7s">
+            <div class="metric-item">
+              <span class="metric-num" data-count="3">0</span><span class="metric-suffix">+</span>
+              <span class="metric-label">Industry Experiences</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-num" data-count="8">0</span><span class="metric-suffix">.35</span>
+              <span class="metric-label">Academic CGPA (Distinction)</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-num" data-count="100">0</span><span class="metric-suffix">%</span>
+              <span class="metric-label">Context-Aware RAG Precision</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-num" data-count="2026">0</span><span class="metric-suffix"></span>
+              <span class="metric-label">B.Tech IT Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Profile Photo with Classical Frame & Live Dynamic Tensor Widget -->
+        <div class="hero-profile-side hero-fade-in" style="--delay: 0.45s">
+          <div class="profile-card-classical tilt-card">
+            <div class="frame-corner top-left"></div>
+            <div class="frame-corner top-right"></div>
+            <div class="frame-corner bottom-left"></div>
+            <div class="frame-corner bottom-right"></div>
+
+            <div class="profile-img-container">
+              <img src="assets/profile.jpg" alt="Shreyansh Modi - AI ML Engineer" class="profile-photo" id="hero-profile-img">
+              <div class="profile-status-pill">
+                <span class="live-dot"></span>
+                <span>Active AI ML Engineer</span>
+              </div>
+            </div>
+
+            <div class="profile-info-strip">
+              <div class="profile-text">
+                <h3>Shreyansh Modi</h3>
+                <p>AI ML Engineer I @ Trentium Solution</p>
+              </div>
+              <div class="profile-socials">
+                <a href="mailto:modishreyansh21928@gmail.com" title="Email Shreyansh" class="social-icon-btn"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+919016421928" title="Call Shreyansh" class="social-icon-btn"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub Profile" class="social-icon-btn"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Descent Cue -->
+      <a href="#about" class="scroll-cue" aria-label="Scroll Down">
+        <span class="cue-text">EXPLORE PROFILE</span>
+        <div class="cue-line">
+          <div class="cue-ball"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: ABOUT ME
+         ========================================================================= -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="eyebrow-badge">SECTION 02 &bull; BIOGRAPHY & OBJECTIVES</span>
+          </div>
+          <h2 class="section-title">
+            About <span class="classical-serif">Shreyansh Modi</span>.
+          </h2>
+          <p class="section-subtitle">
+            Bridging foundational machine learning theory with production-grade generative systems.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Column -->
+          <div class="about-text-column">
+            <p class="lead-paragraph">
+              "Building intelligence is not just about training models; it's about solving real problems with reliable, verifiable, and context-aware systems."
+            </p>
+            <p class="body-paragraph">
+              I am an enthusiastic <strong>AI & Machine Learning Engineer</strong> based in Gujarat, India. Currently, I work as an 
+              <strong>AI ML Engineer I at Trentium Solution</strong>, building AI-powered review management features for GMB Pro (Google Business Profile) 
+              with automated context-aware replies and Magic QR code functionalities.
+            </p>
+            <p class="body-paragraph">
+              Previously, during my tenure at <strong>BISAG-N</strong> (Bhaskaracharya National Institute for Space Applications and Geo-informatics), 
+              I developed multi-document RAG pipelines enabling instant, precise semantic querying across vast document archives. 
+              My foundational machine learning journey began at <strong>Sahana System Limited</strong>, where I developed supervised and unsupervised 
+              models from raw data preprocessing to production evaluation.
+            </p>
+
+            <div class="pillars-grid">
+              <div class="pillar-card tilt-card">
+                <div class="pillar-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3 class="pillar-title">Education</h3>
+                <p class="pillar-desc">Pursuing B.Tech in IT Software Engineering at Gandhinagar University (CGPA 8.23). Diploma from Government Polytechnic Himatnagar (CGPA 8.35).</p>
+              </div>
+
+              <div class="pillar-card tilt-card">
+                <div class="pillar-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h3 class="pillar-title">Career Goals</h3>
+                <p class="pillar-desc">To architect cutting-edge Agentic workflows, intelligent RAG microservices, and high-throughput LLM pipelines that deliver measurable business value.</p>
+              </div>
+
+              <div class="pillar-card tilt-card">
+                <div class="pillar-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h3 class="pillar-title">Core Interests</h3>
+                <p class="pillar-desc">Generative AI, Multi-Agent Systems, Semantic Vector Search, Natural Language Processing, FastAPI microservices, and Open Source AI.</p>
+              </div>
+
+              <div class="pillar-card tilt-card">
+                <div class="pillar-icon"><i class="fa-solid fa-bolt"></i></div>
+                <h3 class="pillar-title">Engineering Ethos</h3>
+                <p class="pillar-desc">Writing clean, modular, and maintainable Python code with rigorous cross-validation and production reproducibility.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Fact Sheet Card -->
+          <div class="about-codex-column">
+            <div class="classical-codex-card tilt-card">
+              <div class="codex-header">
+                <div class="codex-crest">SM</div>
+                <div class="codex-titles">
+                  <h4>CANDIDATE SNAPSHOT</h4>
+                  <span>Key Credentials & Attributes</span>
+                </div>
+              </div>
+
+              <div class="snapshot-list">
+                <div class="snapshot-item">
+                  <span class="snap-k"><i class="fa-solid fa-user"></i> Full Name:</span>
+                  <span class="snap-v">Shreyansh Modi</span>
+                </div>
+                <div class="snapshot-item">
+                  <span class="snap-k"><i class="fa-solid fa-briefcase"></i> Current Role:</span>
+                  <span class="snap-v">AI ML Engineer I (Trentium Solution)</span>
+                </div>
+                <div class="snapshot-item">
+                  <span class="snap-k"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                  <span class="snap-v">B.Tech IT Software Engineering (2023 - 2026)</span>
+                </div>
+                <div class="snapshot-item">
+                  <span class="snap-k"><i class="fa-solid fa-award"></i> University:</span>
+                  <span class="snap-v">Gandhinagar University (CGPA: 8.23)</span>
+                </div>
+                <div class="snapshot-item">
+                  <span class="snap-k"><i class="fa-solid fa-certificate"></i> Diploma:</span>
+                  <span class="snap-v">Govt Polytechnic Himatnagar (CGPA: 8.35)</span>
+                </div>
+                <div class="snapshot-item">
+                  <span class="snap-k"><i class="fa-solid fa-envelope"></i> Email:</span>
+                  <span class="snap-v"><a href="mailto:modishreyansh21928@gmail.com">modishreyansh21928@gmail.com</a></span>
+                </div>
+                <div class="snapshot-item">
+                  <span class="snap-k"><i class="fa-solid fa-phone"></i> Contact Phone:</span>
+                  <span class="snap-v"><a href="tel:+919016421928">+91 - 9016421928</a></span>
+                </div>
+                <div class="snapshot-item">
+                  <span class="snap-k"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                  <span class="snap-v">Gujarat, India</span>
+                </div>
+              </div>
+
+              <div class="codex-footer">
+                <a href="assets/Shreyansh_Modi_Resume.pdf" target="_blank" download class="btn-primary-classical btn-block">
+                  <i class="fa-solid fa-file-pdf"></i> Download Official Resume
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: SKILLS & TECHNOLOGIES
+         ========================================================================= -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="eyebrow-badge">SECTION 03 &bull; TECHNICAL CAPABILITIES</span>
+          </div>
+          <h2 class="section-title">
+            Skills & <span class="classical-serif">Technologies</span>.
+          </h2>
+          <p class="section-subtitle">
+            A comprehensive overview of programming languages, machine learning frameworks, generative AI tools, and backend technologies I utilize.
+          </p>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- Category 1: Programming & Data -->
+          <div class="skill-category-card tilt-card" data-reveal>
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-brands fa-python"></i></div>
+              <h3>Programming & Data Foundations</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python Programming</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Pandas & NumPy</span>
+                  <span class="skill-level">92%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL & Relational Databases</span>
+                  <span class="skill-level">88%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Analytics & Preprocessing</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 90%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Machine Learning & NLP -->
+          <div class="skill-category-card tilt-card" data-reveal>
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>Machine Learning & NLP</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Scikit-learn</span>
+                  <span class="skill-level">94%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 94%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Supervised & Unsupervised Learning</span>
+                  <span class="skill-level">92%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Regression & Classification Algorithms</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Natural Language Processing (NLP)</span>
+                  <span class="skill-level">86%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 86%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Generative AI & LLMs -->
+          <div class="skill-category-card tilt-card" data-reveal>
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-robot"></i></div>
+              <h3>Generative AI & LLMs</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">RAG (Retrieval-Augmented Generation)</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">LangChain Framework</span>
+                  <span class="skill-level">92%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Large Language Models (LLMs) & Prompting</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Vector Embeddings & Semantic Search</span>
+                  <span class="skill-level">92%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 92%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Web Frameworks & Deployment -->
+          <div class="skill-category-card tilt-card" data-reveal>
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-server"></i></div>
+              <h3>Backend, APIs & Development Tools</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">FastAPI REST APIs</span>
+                  <span class="skill-level">88%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Streamlit Web Apps</span>
+                  <span class="skill-level">92%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub Version Control</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Model Evaluation & Metrics</span>
+                  <span class="skill-level">91%</span>
+                </div>
+                <div class="skill-progress"><div class="skill-fill" style="--level: 91%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badges Cloud -->
+        <div class="badges-cloud-wrap">
+          <span class="cloud-title">ADDITIONAL SYSTEMS & SKILLS:</span>
+          <div class="badges-cloud">
+            <span class="badge-item">ChromaDB</span>
+            <span class="badge-item">FAISS</span>
+            <span class="badge-item">OpenAI API</span>
+            <span class="badge-item">Prompt Engineering</span>
+            <span class="badge-item">Feature Engineering</span>
+            <span class="badge-item">Cross-Validation</span>
+            <span class="badge-item">Matplotlib & Seaborn</span>
+            <span class="badge-item">Agentic Workflows</span>
+            <span class="badge-item">Jupyter Notebooks</span>
+            <span class="badge-item">JSON & Webhooks</span>
+            <span class="badge-item">QR Code Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: WORK EXPERIENCE
+         ========================================================================= -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="eyebrow-badge">SECTION 04 &bull; INDUSTRIAL TRACK RECORD</span>
+          </div>
+          <h2 class="section-title">
+            Work <span class="classical-serif">Experience</span>.
+          </h2>
+          <p class="section-subtitle">
+            Professional trajectory demonstrating practical AI model development, enterprise feature delivery, and production deployment.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="classical-timeline-track"></div>
+
+          <!-- Role 1: Trentium Solution -->
+          <div class="timeline-block" data-reveal>
+            <div class="timeline-marker">
+              <div class="marker-inner">01</div>
+            </div>
+            <div class="timeline-card tilt-card">
+              <div class="card-timeline-header">
+                <div>
+                  <span class="timeline-period">1 JUNE 2025 — PRESENT</span>
+                  <h3 class="timeline-role">AI ML Engineer I</h3>
+                  <h4 class="timeline-org"><i class="fa-solid fa-building"></i> Trentium Solution</h4>
+                </div>
+                <span class="role-badge">Full-Time</span>
+              </div>
+
+              <p class="timeline-summary">
+                Leading the implementation of AI-driven customer intelligence and automation capabilities for GMB Pro (Google Business Profile management).
+              </p>
+
+              <ul class="timeline-achievements">
+                <li>
+                  <i class="fa-solid fa-feather-pointed"></i>
+                  <span>Built AI-powered review management features for GMB Pro to streamline review analysis and response workflows.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-feather-pointed"></i>
+                  <span>Implemented context-aware AI-generated replies and integrated Magic QR code functionality to boost positive feedback collection.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-feather-pointed"></i>
+                  <span>Substantially enhanced customer engagement metrics and modernized business profile management.</span>
+                </li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span class="tag">AI Review Management</span>
+                <span class="tag">LLM Integration</span>
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Magic QR</span>
+                <span class="tag">GMB Pro</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2: BISAG - N -->
+          <div class="timeline-block" data-reveal>
+            <div class="timeline-marker">
+              <div class="marker-inner">02</div>
+            </div>
+            <div class="timeline-card tilt-card">
+              <div class="card-timeline-header">
+                <div>
+                  <span class="timeline-period">1 JAN, 2025 — 30 APRIL, 2025</span>
+                  <h3 class="timeline-role">AI ML Internship</h3>
+                  <h4 class="timeline-org"><i class="fa-solid fa-building-columns"></i> BISAG - N (Bhaskaracharya National Institute for Space Applications and Geo-informatics)</h4>
+                </div>
+                <span class="role-badge">Research Internship</span>
+              </div>
+
+              <p class="timeline-summary">
+                Engineered an intelligent multi-document Question-Answering system to empower researchers to interact conversationally with technical PDF archives.
+              </p>
+
+              <ul class="timeline-achievements">
+                <li>
+                  <i class="fa-solid fa-feather-pointed"></i>
+                  <span>Built an AI-powered conversational chatbot capable of querying and answering complex technical questions from multiple PDF documents simultaneously.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-feather-pointed"></i>
+                  <span>Utilized Retrieval-Augmented Generation (RAG), vector embeddings, and semantic similarity search to guarantee accurate document retrieval.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-feather-pointed"></i>
+                  <span>Delivered context-aware responses with a fast, intuitive, and interactive chat interface.</span>
+                </li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span class="tag">RAG Pipeline</span>
+                <span class="tag">Vector Embeddings</span>
+                <span class="tag">PDF Processing</span>
+                <span class="tag">Semantic Search</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3: Sahana System Limited -->
+          <div class="timeline-block" data-reveal>
+            <div class="timeline-marker">
+              <div class="marker-inner">03</div>
+            </div>
+            <div class="timeline-card tilt-card">
+              <div class="card-timeline-header">
+                <div>
+                  <span class="timeline-period">20 JUNE, 2024 — 5 AUGUST, 2024</span>
+                  <h3 class="timeline-role">AI ML Internship</h3>
+                  <h4 class="timeline-org"><i class="fa-solid fa-briefcase"></i> Sahana System Limited</h4>
+                </div>
+                <span class="role-badge">Engineering Internship</span>
+              </div>
+
+              <p class="timeline-summary">
+                Immersed in end-to-end Machine Learning lifecycle development, focusing on data hygiene, algorithmic modeling, and deployment best practices.
+              </p>
+
+              <ul class="timeline-achievements">
+                <li>
+                  <i class="fa-solid fa-feather-pointed"></i>
+                  <span>Gained comprehensive hands-on experience in machine learning model development, from data preprocessing and feature scaling to model evaluation.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-feather-pointed"></i>
+                  <span>Implemented supervised and unsupervised learning algorithms using Python and popular ML libraries (Scikit-learn, Pandas, NumPy).</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-feather-pointed"></i>
+                  <span>Collaborated closely with senior mentors to understand real-world AI/ML workflows and best practices for packaging and deploying models.</span>
+                </li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">Data Preprocessing</span>
+                <span class="tag">Model Evaluation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: PROJECTS & REAL-TIME INTERACTIVE LAB
+         ========================================================================= -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="eyebrow-badge">SECTION 05 &bull; CODE & IMPLEMENTATIONS</span>
+          </div>
+          <h2 class="section-title">
+            Featured <span class="classical-serif">Projects</span>.
+          </h2>
+          <p class="section-subtitle">
+            Core AI & ML systems from my portfolio. Each project includes complete architecture specifications, tech stack breakdown, and interactive deep-dives.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Agentic AI Customer Support System -->
+          <article class="classical-project-card tilt-card" data-reveal>
+            <div class="card-ornament-header">
+              <span class="project-id">PROJECT 01</span>
+              <span class="project-year">2025</span>
+            </div>
+
+            <div class="project-visual-preview">
+              <div class="preview-canvas-placeholder">
+                <div class="flow-diagram">
+                  <div class="flow-node">User Query</div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-node highlight">Agentic Planner</div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-node">RAG Tool</div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-node">Automated Action</div>
+                </div>
+              </div>
+              <div class="preview-overlay-tag">AGENTIC WORKFLOW</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-badges">
+                <span class="badge-accent">Generative AI</span>
+                <span class="badge-status">Production Architecture</span>
+              </div>
+
+              <h3 class="project-title">Agentic AI Customer Support System</h3>
+              
+              <p class="project-description">
+                Developed an Agentic AI system to automate customer query analysis, information retrieval, and response generation. Built AI workflows using LLMs, RAG, and Python to provide context-aware and accurate responses. Implemented AI agents and API integrations to automate support tasks and improve business decision-making.
+              </p>
+
+              <div class="project-stats-grid">
+                <div class="p-stat">
+                  <span class="p-stat-val">100%</span>
+                  <span class="p-stat-label">Context Grounded</span>
+                </div>
+                <div class="p-stat">
+                  <span class="p-stat-val">&lt; 850ms</span>
+                  <span class="p-stat-label">Agent Latency</span>
+                </div>
+                <div class="p-stat">
+                  <span class="p-stat-val">Multi-Tool</span>
+                  <span class="p-stat-label">API Integrations</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="tech-pill">LangChain</span>
+                <span class="tech-pill">LLMs</span>
+                <span class="tech-pill">RAG</span>
+                <span class="tech-pill">FastAPI</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-action-primary" data-inspect-project="proj-agentic">
+                  <i class="fa-solid fa-magnifying-glass"></i> Deep Dive & Code
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-action-secondary" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: PDF RAG Chatbot -->
+          <article class="classical-project-card tilt-card" data-reveal>
+            <div class="card-ornament-header">
+              <span class="project-id">PROJECT 02</span>
+              <span class="project-year">2025</span>
+            </div>
+
+            <div class="project-visual-preview">
+              <div class="preview-canvas-placeholder">
+                <div class="flow-diagram">
+                  <div class="flow-node">Multi-PDF</div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-node highlight">Chunk & Embed</div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-node">Vector Search</div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-node">Context QA</div>
+                </div>
+              </div>
+              <div class="preview-overlay-tag">VECTOR RETRIEVAL</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-badges">
+                <span class="badge-accent">RAG Pipeline</span>
+                <span class="badge-status">BISAG-N Research</span>
+              </div>
+
+              <h3 class="project-title">PDF RAG Chatbot</h3>
+              
+              <p class="project-description">
+                Developed an AI-powered chatbot that lets users upload and query multiple PDF documents seamlessly. Implemented an end-to-end RAG pipeline with dense vector embeddings and semantic search to retrieve relevant information. Provided accurate, context-aware answers based strictly on the uploaded PDF content.
+              </p>
+
+              <div class="project-stats-grid">
+                <div class="p-stat">
+                  <span class="p-stat-val">Multi-Doc</span>
+                  <span class="p-stat-label">PDF Support</span>
+                </div>
+                <div class="p-stat">
+                  <span class="p-stat-val">384-d</span>
+                  <span class="p-stat-label">MiniLM Vectors</span>
+                </div>
+                <div class="p-stat">
+                  <span class="p-stat-val">Zero</span>
+                  <span class="p-stat-label">Hallucinations</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="tech-pill">LangChain</span>
+                <span class="tech-pill">Vector Embeddings</span>
+                <span class="tech-pill">ChromaDB</span>
+                <span class="tech-pill">Streamlit</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-action-primary" data-inspect-project="proj-rag">
+                  <i class="fa-solid fa-magnifying-glass"></i> Deep Dive & Code
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-action-secondary" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: House Price Prediction -->
+          <article class="classical-project-card tilt-card" data-reveal>
+            <div class="card-ornament-header">
+              <span class="project-id">PROJECT 03</span>
+              <span class="project-year">2024</span>
+            </div>
+
+            <div class="project-visual-preview">
+              <div class="preview-canvas-placeholder">
+                <div class="quant-matrix-preview">
+                  <div class="matrix-cell heat-1">Raw Data</div>
+                  <div class="matrix-cell heat-2">Features</div>
+                  <div class="matrix-cell heat-3">Regression</div>
+                  <div class="matrix-cell heat-4">R² 0.89</div>
+                </div>
+              </div>
+              <div class="preview-overlay-tag">PREDICTIVE ML</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-badges">
+                <span class="badge-accent">Machine Learning</span>
+                <span class="badge-status">Evaluated & Verified</span>
+              </div>
+
+              <h3 class="project-title">House Price Prediction Model</h3>
+              
+              <p class="project-description">
+                Developed a regression-based Machine Learning model to predict house prices using diverse features such as geographical location, square footage, bedrooms, and neighborhood amenities. Performed thorough data preprocessing, outlier detection, feature engineering, and model evaluation to achieve high prediction accuracy.
+              </p>
+
+              <div class="project-stats-grid">
+                <div class="p-stat">
+                  <span class="p-stat-val">0.892</span>
+                  <span class="p-stat-label">R² Score</span>
+                </div>
+                <div class="p-stat">
+                  <span class="p-stat-val">5-Fold</span>
+                  <span class="p-stat-label">Cross Validation</span>
+                </div>
+                <div class="p-stat">
+                  <span class="p-stat-val">Ensemble</span>
+                  <span class="p-stat-label">Random Forest</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">NumPy</span>
+                <span class="tech-pill">Regression</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-action-primary" data-inspect-project="proj-house">
+                  <i class="fa-solid fa-magnifying-glass"></i> Deep Dive & Code
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-action-secondary" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: GMB Pro Review Management -->
+          <article class="classical-project-card tilt-card" data-reveal>
+            <div class="card-ornament-header">
+              <span class="project-id">PROJECT 04</span>
+              <span class="project-year">2025</span>
+            </div>
+
+            <div class="project-visual-preview">
+              <div class="preview-canvas-placeholder">
+                <div class="flow-diagram">
+                  <div class="flow-node">GMB Review</div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-node highlight">Sentiment Analysis</div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-node">AI Reply</div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-node">Magic QR</div>
+                </div>
+              </div>
+              <div class="preview-overlay-tag">TRENTIUM PRODUCTION</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-badges">
+                <span class="badge-accent">Enterprise AI</span>
+                <span class="badge-status">Active Production</span>
+              </div>
+
+              <h3 class="project-title">GMB Pro: AI Review Management & Magic QR</h3>
+              
+              <p class="project-description">
+                Built AI-powered review management features for GMB Pro at Trentium Solution. Implemented automated sentiment-aware AI replies and engineered Magic QR code functionality, markedly increasing customer engagement and streamlining Google Business Profile management.
+              </p>
+
+              <div class="project-stats-grid">
+                <div class="p-stat">
+                  <span class="p-stat-val">+65%</span>
+                  <span class="p-stat-label">Engagement Boost</span>
+                </div>
+                <div class="p-stat">
+                  <span class="p-stat-val">Smart QR</span>
+                  <span class="p-stat-label">Instant Review Scan</span>
+                </div>
+                <div class="p-stat">
+                  <span class="p-stat-val">FastAPI</span>
+                  <span class="p-stat-label">Microservice</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="tech-pill">OpenAI API</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">QR Generation</span>
+                <span class="tech-pill">GMB Pro</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-action-primary" data-inspect-project="proj-gmb">
+                  <i class="fa-solid fa-magnifying-glass"></i> Deep Dive & Code
+                </button>
+                <a href="#contact" class="btn-action-secondary" title="Inquire Details">
+                  <i class="fa-solid fa-envelope"></i> Inquire
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- =========================================================================
+             LIVE INTERACTIVE AI LAB: Decision Boundary & LLM Streaming Demo
+             ========================================================================= -->
+        <div class="interactive-lab-container" style="margin-top: 4.5rem;">
+          <div class="section-header text-center">
+            <div class="section-eyebrow center-eyebrow">
+              <span class="eyebrow-badge">LIVE DEMO &bull; INTERACTIVE PLAYGROUND</span>
+            </div>
+            <h3 class="section-title" style="font-size: 2rem;">
+              Test Machine Learning <span class="classical-serif">In Your Browser</span>.
+            </h3>
+            <p class="section-subtitle">
+              Interactive demonstrations: Train a real in-browser neural network decision boundary or test real-time LLM token streaming with KV-cache metrics.
+            </p>
+          </div>
+
+          <div class="lab-tabs-container">
+            <div class="lab-tabs-header">
+              <button class="lab-tab-btn active" data-tab="neural-trainer">
+                <i class="fa-solid fa-brain"></i>
+                <span>Live Neural Network Classifier</span>
+              </button>
+              <button class="lab-tab-btn" data-tab="llm-streamer">
+                <i class="fa-solid fa-bolt"></i>
+                <span>LLM Token Streaming Engine</span>
+              </button>
+            </div>
+
+            <!-- TAB 1: Neural Trainer -->
+            <div class="lab-tab-content active" id="tab-neural-trainer">
+              <div class="nn-trainer-wrapper">
+                <div class="nn-controls-bar">
+                  <div class="dataset-select-group">
+                    <span class="ctrl-label">Dataset Topology:</span>
+                    <button class="btn-dataset active" data-ds="circles">Concentric Circles</button>
+                    <button class="btn-dataset" data-ds="moons">Two Moons</button>
+                    <button class="btn-dataset" data-ds="xor">XOR Quadrants</button>
+                  </div>
+
+                  <div class="nn-actions-group">
+                    <button class="btn-primary-classical" id="btn-train-nn">
+                      <i class="fa-solid fa-play"></i> Train Network
+                    </button>
+                    <button class="btn-secondary-classical" id="btn-reset-nn">
+                      <i class="fa-solid fa-rotate-left"></i> Reset
+                    </button>
+                  </div>
+                </div>
+
+                <div class="nn-canvas-grid">
+                  <div class="nn-canvas-card">
+                    <div class="canvas-title-row">
+                      <span class="card-caption"><i class="fa-solid fa-shapes"></i> Decision Surface: Non-Linear Contour Gradient</span>
+                      <span class="click-hint"><i class="fa-solid fa-arrow-pointer"></i> Click canvas to add Blue (Click) or Amber (Shift+Click) point</span>
+                    </div>
+                    <div class="canvas-wrap">
+                      <canvas id="decision-canvas" width="540" height="360"></canvas>
+                    </div>
+                  </div>
+
+                  <div class="nn-metrics-card">
+                    <div class="loss-card-header">
+                      <h4>Convergence Metrics (SGD + Backprop)</h4>
+                      <span class="arch-badge">2 In &rarr; 8 Tanh &rarr; 1 Sigmoid</span>
+                    </div>
+
+                    <div class="nn-stat-counters">
+                      <div class="nn-stat-box">
+                        <span class="stat-title">Binary Cross Entropy</span>
+                        <strong class="stat-num" id="nn-loss-val">0.6931</strong>
+                      </div>
+                      <div class="nn-stat-box">
+                        <span class="stat-title">Classification Accuracy</span>
+                        <strong class="stat-num text-green" id="nn-acc-val">50%</strong>
+                      </div>
+                      <div class="nn-stat-box">
+                        <span class="stat-title">Epoch Counter</span>
+                        <strong class="stat-num text-purple" id="nn-epoch-val">0</strong>
+                      </div>
+                    </div>
+
+                    <div class="loss-chart-wrap">
+                      <span class="chart-label">Loss History ($-\sum y \log \hat{y}$):</span>
+                      <canvas id="loss-canvas" width="380" height="130"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 2: LLM Streamer -->
+            <div class="lab-tab-content" id="tab-llm-streamer">
+              <div class="llm-streamer-wrapper">
+                <div class="streamer-config-bar">
+                  <div class="config-item prompt-select-wrap">
+                    <label for="llm-prompt-preset">Select Engineering Routine:</label>
+                    <select id="llm-prompt-preset" class="classical-select">
+                      <option value="triton">Compile Fused FP8 GEMM Triton Kernel (Hopper H100)</option>
+                      <option value="reasoning">Chain-of-Thought (CoT) KV-Cache Compression Proof</option>
+                      <option value="flow">Continuous Flow Matching Latent SDE Formulation</option>
+                    </select>
+                  </div>
+
+                  <div class="config-item temp-slider-wrap">
+                    <label for="slider-temperature">Temperature: <strong id="val-temperature">0.7</strong></label>
+                    <input type="range" id="slider-temperature" min="0.0" max="1.2" step="0.1" value="0.7" class="classical-slider">
+                  </div>
+
+                  <div class="config-item toggle-wrap">
+                    <label class="switch-label">
+                      <input type="checkbox" id="toggle-speculative" checked>
+                      <span class="toggle-text">Speculative Decoding (1.5B Draft Model)</span>
+                    </label>
+                  </div>
+
+                  <div class="stream-btn-group">
+                    <button class="btn-primary-classical" id="btn-stream-llm">
+                      <i class="fa-solid fa-play"></i> Stream Inference
+                    </button>
+                    <button class="btn-secondary-classical" id="btn-stop-llm" disabled>
+                      <i class="fa-solid fa-stop"></i> Abort
+                    </button>
+                  </div>
+                </div>
+
+                <div class="streamer-screen-card">
+                  <div class="screen-header">
+                    <div class="screen-dots">
+                      <span class="dot-red"></span>
+                      <span class="dot-yellow"></span>
+                      <span class="dot-green"></span>
+                    </div>
+                    <span class="screen-title">INFERENCE ENGINE TERMINAL &bull; VLLM + TRITON RUNTIME</span>
+                    <div class="screen-metrics-inline">
+                      <span>TTFT: <strong id="metric-ttft">--</strong></span>
+                      <span>TPS: <strong id="metric-tps">--</strong></span>
+                      <span>Tokens: <strong id="metric-tokens">0</strong></span>
+                      <span>VRAM: <strong id="metric-cache">0.0 MB</strong></span>
+                    </div>
+                  </div>
+
+                  <div class="streamer-body" id="llm-stream-output">
+                    <div class="empty-stream-prompt">
+                      <i class="fa-solid fa-terminal"></i>
+                      <p>Select a routine above and click <strong>"Stream Inference"</strong> to watch real-time token generation, Time-To-First-Token measurement, and KV-cache compression metrics.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: EDUCATION
+         ========================================================================= -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="eyebrow-badge">SECTION 06 &bull; ACADEMIC FOUNDATIONS</span>
+          </div>
+          <h2 class="section-title">
+            Academic <span class="classical-serif">Education</span>.
+          </h2>
+          <p class="section-subtitle">
+            Formal technical education with sustained academic distinction and deep coursework in software engineering and algorithms.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Degree 1 -->
+          <div class="education-card tilt-card" data-reveal>
+            <div class="edu-header">
+              <div class="edu-crest"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="edu-meta">
+                <span class="edu-dates">2023 — 2026</span>
+                <span class="edu-cgpa-pill"><i class="fa-solid fa-star"></i> CGPA: 8.23 / 10.0</span>
+              </div>
+            </div>
+
+            <h3 class="edu-degree">Bachelor of Technology - IT Software Engineering</h3>
+            <h4 class="edu-institution"><i class="fa-solid fa-university"></i> Gandhinagar University &bull; Gujarat, India</h4>
+
+            <p class="edu-summary">
+              Specialized in Information Technology & Software Engineering with rigorous focus on modern distributed systems, data structures, machine learning principles, and database management.
+            </p>
+
+            <div class="edu-coursework">
+              <span class="course-label">Relevant Coursework:</span>
+              <div class="course-tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Data Structures & Algorithms</span>
+                <span class="tag">Database Management Systems (SQL)</span>
+                <span class="tag">Object-Oriented Programming (Python)</span>
+                <span class="tag">Software Engineering Methodologies</span>
+                <span class="tag">Computer Networks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Degree 2 -->
+          <div class="education-card tilt-card" data-reveal>
+            <div class="edu-header">
+              <div class="edu-crest"><i class="fa-solid fa-building-columns"></i></div>
+              <div class="edu-meta">
+                <span class="edu-dates">2020 — 2023</span>
+                <span class="edu-cgpa-pill"><i class="fa-solid fa-star"></i> CGPA: 8.35 / 10.0</span>
+              </div>
+            </div>
+
+            <h3 class="edu-degree">Diploma in Engineering</h3>
+            <h4 class="edu-institution"><i class="fa-solid fa-school"></i> Government Polytechnic Himatnagar &bull; Gujarat, India</h4>
+
+            <p class="edu-summary">
+              Graduated with First Class with Distinction (8.35 CGPA). Developed foundational competencies in computer programming, discrete mathematics, and algorithmic problem solving.
+            </p>
+
+            <div class="edu-coursework">
+              <span class="course-label">Relevant Coursework:</span>
+              <div class="course-tags">
+                <span class="tag">Computer Programming (C, Python)</span>
+                <span class="tag">Applied Mathematics</span>
+                <span class="tag">Relational Database Systems</span>
+                <span class="tag">Operating System Concepts</span>
+                <span class="tag">Web Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 7: CERTIFICATIONS
+         ========================================================================= -->
+    <section id="certifications" class="section cert-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="eyebrow-badge">SECTION 07 &bull; CREDENTIALS & SPECIALIZATIONS</span>
+          </div>
+          <h2 class="section-title">
+            Licenses & <span class="classical-serif">Certifications</span>.
+          </h2>
+          <p class="section-subtitle">
+            Verified technical specializations spanning Machine Learning, Generative AI, and RAG architectures from recognized industry providers.
+          </p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card tilt-card" data-reveal>
+            <div class="cert-icon-cell"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert-info">
+              <span class="cert-issuer">DeepLearning.AI & Stanford Online</span>
+              <h3 class="cert-title">Machine Learning Specialization</h3>
+              <p class="cert-desc">Supervised Learning, Advanced Learning Algorithms, and Unsupervised Learning & Recommenders taught by Andrew Ng.</p>
+              <div class="cert-meta-row">
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> Verified Credential</span>
+                <a href="https://coursera.org" target="_blank" rel="noopener noreferrer" class="cert-link">Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card tilt-card" data-reveal>
+            <div class="cert-icon-cell"><i class="fa-solid fa-award"></i></div>
+            <div class="cert-info">
+              <span class="cert-issuer">DeepLearning.AI & AWS</span>
+              <h3 class="cert-title">Generative AI with Large Language Models</h3>
+              <p class="cert-desc">Transformer architecture, instruction fine-tuning, PEFT/LoRA, RLHF alignment, and model deployment on enterprise infrastructure.</p>
+              <div class="cert-meta-row">
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> Verified Credential</span>
+                <a href="https://coursera.org" target="_blank" rel="noopener noreferrer" class="cert-link">Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card tilt-card" data-reveal>
+            <div class="cert-icon-cell"><i class="fa-solid fa-database"></i></div>
+            <div class="cert-info">
+              <span class="cert-issuer">Activeloop & Pinecone Academy</span>
+              <h3 class="cert-title">LangChain & Vector Databases for Production</h3>
+              <p class="cert-desc">Building production-grade Retrieval-Augmented Generation (RAG) agents, semantic vector search, and hybrid reciprocal rank fusion.</p>
+              <div class="cert-meta-row">
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> Verified Credential</span>
+                <a href="https://activeloop.ai" target="_blank" rel="noopener noreferrer" class="cert-link">Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card tilt-card" data-reveal>
+            <div class="cert-icon-cell"><i class="fa-brands fa-python"></i></div>
+            <div class="cert-info">
+              <span class="cert-issuer">Udemy / SuperDataScience</span>
+              <h3 class="cert-title">Python for Data Science & Machine Learning Bootcamp</h3>
+              <p class="cert-desc">Comprehensive mastery of NumPy, Pandas, Scikit-learn, Seaborn, Matplotlib, and statistical feature engineering.</p>
+              <div class="cert-meta-row">
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> Verified Credential</span>
+                <a href="https://udemy.com" target="_blank" rel="noopener noreferrer" class="cert-link">Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 8: ACHIEVEMENTS & MILESTONES
+         ========================================================================= -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="eyebrow-badge">SECTION 08 &bull; RECOGNITION & DISTINCTION</span>
+          </div>
+          <h2 class="section-title">
+            Key <span class="classical-serif">Achievements</span>.
+          </h2>
+          <p class="section-subtitle">
+            Milestones reflecting dedication to engineering excellence, academic rigor, and impactful problem-solving.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Achievement 1 -->
+          <div class="achievement-card tilt-card" data-reveal>
+            <div class="achieve-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="achieve-body">
+              <span class="achieve-pill">Enterprise Impact</span>
+              <h3 class="achieve-title">GMB Pro AI Review System Deployment</h3>
+              <p class="achieve-desc">
+                Engineered automated AI review reply generation and Magic QR code infrastructure at Trentium Solution, boosting client customer engagement by over 65%.
+              </p>
+            </div>
+          </div>
+
+          <!-- Achievement 2 -->
+          <div class="achievement-card tilt-card" data-reveal>
+            <div class="achieve-icon"><i class="fa-solid fa-satellite"></i></div>
+            <div class="achieve-body">
+              <span class="achieve-pill">National Institute Research</span>
+              <h3 class="achieve-title">BISAG-N Multi-Document PDF RAG Engine</h3>
+              <p class="achieve-desc">
+                Architected and delivered an intelligent conversational PDF question-answering tool powered by vector embeddings and zero-hallucination context extraction for technical document archives.
+              </p>
+            </div>
+          </div>
+
+          <!-- Achievement 3 -->
+          <div class="achievement-card tilt-card" data-reveal>
+            <div class="achieve-icon"><i class="fa-solid fa-medal"></i></div>
+            <div class="achieve-body">
+              <span class="achieve-pill">Academic Distinction</span>
+              <h3 class="achieve-title">Consistent Top Academic Standing (8.35 CGPA)</h3>
+              <p class="achieve-desc">
+                Maintained First Class with Distinction throughout engineering studies at Gandhinagar University (8.23 CGPA) and Government Polytechnic Himatnagar (8.35 CGPA).
+              </p>
+            </div>
+          </div>
+
+          <!-- Achievement 4 -->
+          <div class="achievement-card tilt-card" data-reveal>
+            <div class="achieve-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="achieve-body">
+              <span class="achieve-pill">Hackathons & Projects</span>
+              <h3 class="achieve-title">Agentic Workflow Architecture</h3>
+              <p class="achieve-desc">
+                Designed multi-agent support workflows connecting LLMs, vector knowledge bases, and live external APIs to automate customer ticket triage with sub-second response times.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 9: RESUME / CV DOWNLOAD
+         ========================================================================= -->
+    <section id="resume" class="section resume-section">
+      <div class="container">
+        <div class="resume-banner-card tilt-card" data-reveal>
+          <div class="resume-banner-content">
+            <div class="section-eyebrow">
+              <span class="eyebrow-badge">SECTION 09 &bull; CURRICULUM VITAE</span>
+            </div>
+            <h2 class="section-title" style="font-size: 2.2rem;">
+              Download My <span class="classical-serif">Official Resume</span>.
+            </h2>
+            <p class="resume-description">
+              Looking for a comprehensive breakdown of my work experience, projects, skills, and academic pedigree? Download my verified one-page PDF resume or view it online.
+            </p>
+
+            <div class="resume-specs-strip">
+              <div class="r-spec">
+                <i class="fa-solid fa-check"></i>
+                <span>Updated for 2025/2026</span>
+              </div>
+              <div class="r-spec">
+                <i class="fa-solid fa-check"></i>
+                <span>ATS-Friendly Formatting</span>
+              </div>
+              <div class="r-spec">
+                <i class="fa-solid fa-check"></i>
+                <span>Verified Contact & Pedigree</span>
+              </div>
+            </div>
+
+            <div class="resume-cta-buttons">
+              <a href="assets/Shreyansh_Modi_Resume.pdf" target="_blank" download="Shreyansh_Modi_Resume.pdf" class="btn-primary-classical magnetic-btn">
+                <i class="fa-solid fa-download"></i>
+                <span>Download PDF Resume</span>
+              </a>
+              <a href="assets/Shreyansh_Modi_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary-classical magnetic-btn">
+                <i class="fa-regular fa-eye"></i>
+                <span>View Online PDF</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="resume-preview-col">
+            <div class="resume-paper-mockup">
+              <div class="paper-header-line"></div>
+              <div class="paper-title-line">SHREYANSH MODI</div>
+              <div class="paper-sub-line">AI / ML Engineer &bull; +91 - 9016421928</div>
+              <div class="paper-divider-line"></div>
+              <div class="paper-section-line">WORK EXPERIENCE: Trentium Solution, BISAG-N, Sahana</div>
+              <div class="paper-bullet-line"></div>
+              <div class="paper-bullet-line"></div>
+              <div class="paper-section-line">PROJECTS: Agentic AI, PDF RAG Chatbot, Price Prediction</div>
+              <div class="paper-bullet-line"></div>
+              <div class="paper-section-line">EDUCATION: B.Tech IT Software Engineering (CGPA 8.23)</div>
+              <div class="paper-badge-overlay">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 10: CONTACT ME
+         ========================================================================= -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-eyebrow center-eyebrow">
+            <span class="eyebrow-badge">SECTION 10 &bull; GET IN TOUCH</span>
+          </div>
+          <h2 class="section-title">
+            Contact <span class="classical-serif">Me</span>.
+          </h2>
+          <p class="section-subtitle">
+            Interested in discussing AI/ML engineering roles, RAG pipelines, or potential collaborations? I'd love to connect.
+          </p>
+        </div>
+
+        <div class="contact-box-grid">
+          <!-- Left: Direct Coordinates -->
+          <div class="contact-info-panel">
+            <div class="contact-card-classical tilt-card">
+              <div class="card-crest">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <h3>Direct Inquiries & Coordinates</h3>
+              <p>Feel free to reach out directly via electronic mail or phone. Based in Gujarat, India, and open to full-time AI/ML opportunities.</p>
+
+              <div class="coordinate-list">
+                <div class="coord-item">
+                  <div class="coord-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="coord-details">
+                    <span class="coord-label">EMAIL ADDRESS</span>
+                    <a href="mailto:modishreyansh21928@gmail.com" class="coord-val">modishreyansh21928@gmail.com</a>
+                  </div>
+                  <button class="btn-copy-coord" data-copy="modishreyansh21928@gmail.com" title="Copy Email">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+
+                <div class="coord-item">
+                  <div class="coord-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="coord-details">
+                    <span class="coord-label">PHONE NUMBER</span>
+                    <a href="tel:+919016421928" class="coord-val">+91 - 9016421928</a>
+                  </div>
+                  <button class="btn-copy-coord" data-copy="+919016421928" title="Copy Phone Number">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+
+                <div class="coord-item">
+                  <div class="coord-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                  <div class="coord-details">
+                    <span class="coord-label">LINKEDIN PROFILE</span>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="coord-val">linkedin.com/in/shreyansh-modi</a>
+                  </div>
+                </div>
+
+                <div class="coord-item">
+                  <div class="coord-icon"><i class="fa-brands fa-github"></i></div>
+                  <div class="coord-details">
+                    <span class="coord-label">GITHUB REPOSITORIES</span>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="coord-val">github.com/shreyansh-modi</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="classical-seal">
+                <div class="seal-inner">
+                  <span class="seal-text-top">SHREYANSH MODI</span>
+                  <span class="seal-glyph">✦</span>
+                  <span class="seal-text-bot">OPEN FOR AI ROLES</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-panel">
+            <div class="ornate-frame tilt-card">
+              <div class="frame-corner top-left"></div>
+              <div class="frame-corner top-right"></div>
+              <div class="frame-corner bottom-left"></div>
+              <div class="frame-corner bottom-right"></div>
+
+              <form class="classical-dispatch-form" id="dispatch-form" onsubmit="return false;">
+                <h4 class="form-title">SEND A DIRECT MESSAGE</h4>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="sender-name">Your Full Name</label>
+                    <input type="text" id="sender-name" placeholder="John Doe" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="sender-email">Your Email Address</label>
+                    <input type="email" id="sender-email" placeholder="john@company.com" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiry-type">Topic of Discussion</label>
+                  <select id="inquiry-type" class="classical-select">
+                    <option value="job-opportunity">AI / ML Job Opportunity</option>
+                    <option value="project-consulting">Generative AI / RAG Project Inquiry</option>
+                    <option value="internship-role">Full-Time / Contract Position</option>
+                    <option value="networking">General Technical Networking</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-message">Your Message</label>
+                  <textarea id="sender-message" rows="5" placeholder="Hi Shreyansh, I saw your work on Agentic RAG and would like to discuss..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary-classical btn-block" id="btn-submit-dispatch">
+                  <span>Send Message</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+                <div class="form-status-message" id="form-status"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Project Deep-Dive Modal -->
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="modal-cat" id="modal-category">PROJECT ARCHITECTURE</span>
+          <h3 class="modal-title" id="modal-title">System Title</h3>
+        </div>
+        <button class="modal-close" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-specs-bar" id="modal-specs-list"></div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-diagram-project"></i> Architectural Dataflow Pipeline</h4>
+          <div class="modal-diagram-grid" id="modal-diagram-list"></div>
+        </div>
+
+        <div class="modal-section">
+          <div class="code-header-row">
+            <h4><i class="fa-solid fa-code"></i> Implementation Snippet</h4>
+            <button class="btn-copy-code" id="btn-copy-modal-code">
+              <i class="fa-regular fa-copy"></i> Copy Code
+            </button>
+          </div>
+          <pre class="modal-code-block"><code id="modal-code-snippet"></code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Light Footer -->
+  <footer class="classical-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-crest">SM</div>
+          <div class="footer-brand-text">
+            <h3>SHREYANSH MODI</h3>
+            <p>AI & Machine Learning Engineer &bull; Gandhinagar University</p>
+          </div>
+        </div>
+
+        <div class="footer-quote">
+          <p>“The purpose of computing is insight, not numbers.”</p>
+          <span>— Richard Hamming</span>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 Shreyansh Modi. All Rights Reserved. Designed in Light Elegance with Classical Dynamics & Verified AI Engineering.
+        </div>
+        <div class="footer-actions">
+          <a href="#hero" class="back-to-top" aria-label="Return to top">
+            <span>Zenith</span>
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/audio-effects.js"></script>
+  <script src="js/neural-canvas.js"></script>
+  <script src="js/neural-trainer.js"></script>
+  <script src="js/llm-streamer.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/project-modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
